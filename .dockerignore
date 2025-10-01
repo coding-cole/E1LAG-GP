@@ -9,3 +9,5 @@ __pycache__/
 .vscode/
 .idea/
 README.md
+generator/
+qr_validation.log
