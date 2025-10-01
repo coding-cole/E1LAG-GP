@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔍 QR Code Scanner</h1>
+
+        <div class="message info">
+            Point your camera at a QR code to scan
+        </div>
+
+        <div id="reader"></div>
+
+        <div class="spinner" id="spinner"></div>
+
+        <div class="message" id="message"></div>
+
+        <button id="startBtn" onclick="startScanner()">Start Scanner</button>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
