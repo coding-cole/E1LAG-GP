@@ -1,7 +1,12 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
-import os
 import logging
+
 
 app = Flask(__name__)
 
@@ -101,4 +106,5 @@ def validate_qr():
 
 if __name__ == '__main__':
     logger.info("Starting Flask development server...")
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
